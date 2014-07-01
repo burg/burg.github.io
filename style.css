@@ -146,6 +146,13 @@ p {
   margin: 16px 0;
 }
 
+p.start {
+  font-weight: bold;
+  /* approximates glyph widths without bold,
+     (for Helvetica Neue at least.) */
+  font-size: 95%;
+}
+
 p, aside {
   color: #333;
 }
