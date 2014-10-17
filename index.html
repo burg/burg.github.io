@@ -61,36 +61,52 @@ p.start {
 
 <hr/>
 
-<h2><a href="#current" name="current">#</a> Current Projects</h2>
+<h2><a href="#current" name="current">#</a>Dissertation Work</h2>
 
-<!--<aside class="light">Updated June 30, 2014</aside>-->
-<p><a href="#">Probes:</a> a new navigation strategy for interactive record/replay systems. Users can go back-in-time to any logged output, or retroactively add new logging statements.
+<aside class="light">Deterministic replay techniques can cheaply capture an entire program execution and re-run it exactly.</aside>
+<p><i>Deterministic replay</i> is a fundamental enabling technology for advanced developer tools. My dissertation work investigates deterministic replay in the browser: how to capture and replay web applications; affordances for navigating to relevant program states; and debugging tools that use past program states to explain behavior.
+
+<aside class="light">Internship at Apple in 2014.
+<br />University of Washington, 2011&mdash;</aside>
+
+<p><a href="#">Dolos</a> is a modern, low-overhead deterministic replay infrastructure for capturing web application behavior. Dolos is <a href="https://bugs.webkit.org/showdependencytree.cgi?id=136290&hide_resolved=1">being upstreamed</a> into the <a href="https://webkit.org/">WebKit project</a>.
 </p>
 
-<!--<aside class="light">Updated June 30, 2014</aside>-->
-<p><a href="#">Dolos:</a> a modern, low-overhead deterministic replay infrastructure for capturing web application behavior, integrated with the WebKit Web Inspector.
+<aside class="light">
+The original prototype is explained in our UIST 2013 paper; later prototypes have been upstreamed to WebKit.
+</aside>
+<p><a href="https://github.com/burg/timelapse/">Timelapse</a> is the first user interface for capturing and replaying web application executions directly from the browser's developer tools.
 </p>
 
-<!--<aside class="light">Updated June 30, 2014</aside>-->
-<p><a href="https://www.webkit.org/">WebKit:</a> I am a committer on the WebKit project, with a focus on developer tooling. Lately, I have focused on refining and upstreaming the Dolos replay infrastructure.
+<aside class="light">University of Washington, 2013&ndash;2014.</aside>
+<p><a href="https://github.com/burg/replay-staging/">Probes</a> enable a developer to add logging statements to a live or captured execution while it runs. <a href="#">Time-indexed outputs</a> are a scheme for indexing and seeking playback to text outputs such as console logging.
 </p>
 
-<h2><a href="#past" name="past">#</a> Past Projects</h2>
+<aside class="light">University of Washington, 2014&mdash;</aside>
+<p><a href="#">Scry</a> is a tool for understanding how and why a web application's visual output changes. Using Scry, a developer can peek at all operations on a DOM node and trace style and appearance changes back to specific JavaScript statements.
+</p>
 
-<aside class="light">University of Washington, 2011&ndash;2013.</aside>
-<p><a href="#">Timelapse:</a> the first integrated user interface for deterministic record/replay for interactive web applications. This interface has been superseded by <a href="#">Probes</a>.
+<h2><a href="#current" name="current">#</a>Open Source</h2>
+
+<p>I am a reviewer on the <a href="https://www.webkit.org/">WebKit project</a>, with a focus on developer tooling. In my spare time, I have been <a href="https://bugs.webkit.org/showdependencytree.cgi?id=136290&hide_resolved=1">upstreaming Dolos</a> and other parts of my dissertation.
 </p>
 
 <aside class="light">Internship at Mozilla Research in 2012.</aside>
-<p><a href="https://github.com/mozilla/servo">Servo:</a> a research browser written in Rust that explores new ways to parallelize, decompose, and secure a rendering engine for web content. I stood up the current layout subsystem (block/inline/text layout), and worked on many other things.
+<p><a href="https://github.com/servo/servo">Servo</a> is an experimental browser written in <a href="https://rust-lang.org/">Rust</a> that explores new ways to parallelize, decompose, and secure a rendering engine for web content. I prototyped the current layout subsystem (block/inline/text layout), and worked on many other things.
 </p>
+
+<h2><a href="#past" name="past">#</a> Other Projects</h2>
 
 <aside class="light">Internship at Microsoft Research in 2010.</aside>
 <p><a href="#">C3:</a> a research infrastructure for extensible, type-safe web browsers. I wrote a rendering engine for inlines, blocks, floats, and tables in C#.
 </p>
 
 
-<h2><a href="#pubs" name = "pubs">#</a> Publications</h2>
+<h2><a href="#pubs" name="pubs">#</a>Academic Publications</h2>
+
+<p><b>Brian Burg</b>, Katie Madonna, Andrew J. Ko, Michael D. Ernst. Interactive Navigation of Captured Executions via Program Output. <i>In review.</i></p>
+
+<p>Gregory L. Nelson, <b>Brian Burg</b>, Daniela Rosner. 'War Stories' of Debugging. <i>In review.</i></p>
 
 <aside class="light">Honorable Mention, Best Paper Award.</aside>
 <p><b>Brian Burg</b>, Richard Bailey, Andrew J. Ko, Michael D. Ernst. Interactive record/replay for web application debugging. Presented at <a href="http://www.acm.org/uist/uist2013/">UIST 2013</a>.</p>
