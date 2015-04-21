@@ -155,6 +155,42 @@ p, aside {
   color: #333;
 }
 
+ul.supplemental-links {
+  display: block;
+  margin: 0;
+}
+
+ul.supplemental-links li {
+  display: inline;
+  list-style-type: none;
+  opacity: 0.8;
+  color: #666;
+}
+
+ul.supplemental-links {
+  padding-left: 0;
+}
+
+ul.supplemental-links::before {
+  content: '[';
+}
+
+ul.supplemental-links::after {
+  content: ']';
+}
+
+ul.supplemental-links li::before {
+  content: '| ';
+}
+
+ul.supplemental-links li:first-of-type::before {
+  content: '';
+}
+
+span.author-list {
+  font-size: 90%;
+}
+
 blockquote {
   width: 520px;
 }
@@ -166,6 +202,7 @@ li {
 
 pre, code, tt, textarea {
   font-family: "Menlo", monospace;
+  font-size: 90%;
 }
 
 code {
@@ -205,6 +242,10 @@ td {
 td p:first-child {
   margin-top: 0;
   padding-top: 0;
+}
+
+aside:not(.picture) {
+  opacity: 0.7;
 }
 
 .light {

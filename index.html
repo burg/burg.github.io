@@ -36,13 +36,13 @@ p.start {
 
 <article>
 
-<aside>
+<aside class="picture">
   <img src="brrian.jpg" height="124px" />
 </aside>
 
 <h1>Brian Burg</h1>
 
-<p class="start">Seattle-based hacker, designer and researcher. PhD student at the University of Washington. I make tools that help people debug their programs more effectively.
+<p class="start">Seattle-based hacker, designer and researcher. PhD candidate at the University of Washington. I make tools that help people debug their programs more effectively.
 
 <p class="links">
 <a href="mailto:burg@cs.uw.edu">burg@cs.uw.edu</a>
@@ -64,12 +64,14 @@ p.start {
 
 <h2><a href="#jobsearch" name="jobsearch">#</a>What's Next?</h2>
 
-<aside class="light">I defend my thesis on June 11. Then, I'm taking some much-needed vacation.</aside>
+<aside>I defend my thesis on June 11. Then, I'm taking some much-needed vacation.</aside>
 <p>
 <stronger>I'm looking for a full-time position in the Seattle area (or mostly remote).</stronger></p>
-<p>I'm interested in all things related to developer tools and productivity: brainstorming, prototyping, designing, implementing, and testing new user features; improving code quality, bug reporting, debugging, testing, release workflows and development processes; and transferring cutting-edge research into the real world.</p>
+<p>My ideal job is one where I can brainstorm, prototype, and ship groundbreaking features that make developers more happy and productive. I do whatever is necessary to invent better tools&mdash;whether that's user research, prototyping interfaces, or coding up new browser rendering engine capabilities.</p>
 
-<aside class="light">I'm not relocating to the Bay Area.</aside>
+<p>Up to now, I have focused on tools for web developers and browser engineers. I'm also interested in improving code quality, bug reporting, debugging, testing, and development processes.</p>
+
+<aside>I'm not relocating to the Bay Area.</aside>
 <p><stronger>Think I might be a good fit for an opportunity? Let's get in touch.</stronger>
 </p>
 
@@ -77,26 +79,45 @@ p.start {
 
 <h2><a href="#current" name="current">#</a>Dissertation Work</h2>
 
-<aside class="light">Deterministic replay techniques can cheaply capture an entire program execution and re-run it exactly.</aside>
+<aside>Deterministic replay techniques can cheaply capture an entire program execution and re-run it exactly.</aside>
 <p><i>Deterministic replay</i> is a fundamental enabling technology for advanced developer tools. My dissertation work investigates deterministic replay in the browser: how to capture and replay web applications; affordances for navigating to relevant program states; and debugging tools that use past program states to explain behavior.
 
-<aside class="light">Internship at Apple in 2014.
-<br />University of Washington, 2011&mdash;</aside>
+<aside>Internship at Apple in 2014.<br />
+University of Washington, 2011&mdash;2015.<br />
+<ul class="supplemental-links">
+  <li><a href="papers/uist2013-interactive-record-replay.pdf">paper</a></li>
+  <li><a href="https://www.youtube.com/watch?v=ugHAzyQ6H00">demo video</a></li>
+  <li><a href="files/uist2013-timelapse-slides.pptx">slides</a></li>
+  <li><a href="https://github.com/burg/replay-staging/">code</a></li>
+</ul>
+</aside>
 
 <p><a href="#">Dolos</a> is a modern, low-overhead deterministic replay infrastructure for capturing web application behavior. Dolos is <a href="https://bugs.webkit.org/showdependencytree.cgi?id=136290&hide_resolved=1">being upstreamed</a> into the <a href="https://webkit.org/">WebKit project</a>.
 </p>
 
-<aside class="light">
+<aside>
 The original prototype is explained in our UIST 2013 paper; later prototypes have been upstreamed to WebKit.
 </aside>
 <p><a href="https://github.com/burg/timelapse/">Timelapse</a> is the first user interface for capturing and replaying web application executions directly from the browser's developer tools.
 </p>
 
-<aside class="light">University of Washington, 2013&ndash;2014.</aside>
+<aside>University of Washington, 2013&ndash;2014.
+<ul class="supplemental-links">
+  <li><a href="papers/draft-interactive-probes.pdf">paper draft</a></li>
+  <li><a href="http://www.youtube.com/watch?v=ht3ckkNh6qM">demo video</a></li>
+  <li><a href="https://github.com/burg/replay-staging/">code</a></li>
+</ul>
+</aside>
 <p><a href="https://github.com/burg/replay-staging/">Probes</a> enable a developer to add logging statements to a live or captured execution while it runs. <a href="#">Time-indexed outputs</a> are a scheme for indexing and seeking playback to text outputs such as console logging.
 </p>
 
-<aside class="light">University of Washington, 2014&mdash;</aside>
+<aside>University of Washington, 2014&mdash;2015.
+<ul class="supplemental-links">
+  <li><a href="papers/draft-explain-visual-changes.pdf">paper draft</a></li>
+  <li><a href="https://www.youtube.com/watch?v=NENGl09Xq0I">demo video</a></li>
+  <li><a href="https://github.com/burg/scry-staging/">code</a></li>
+</ul>
+</aside>
 <p><a href="#">Scry</a> is a tool for understanding how and why a web application's visual output changes. Using Scry, a developer can peek at all operations on a DOM node and trace style and appearance changes back to specific JavaScript statements.
 </p>
 
@@ -105,35 +126,89 @@ The original prototype is explained in our UIST 2013 paper; later prototypes hav
 <p>I am a reviewer on the <a href="https://www.webkit.org/">WebKit project</a>, with a focus on developer tooling. In my spare time, I have been <a href="https://bugs.webkit.org/showdependencytree.cgi?id=136290&hide_resolved=1">upstreaming Dolos</a> and other parts of my dissertation.
 </p>
 
-<aside class="light">Internship at Mozilla Research in 2012.</aside>
+<aside>Internship at Mozilla Research in 2012.</aside>
 <p><a href="https://github.com/servo/servo">Servo</a> is an experimental browser written in <a href="https://rust-lang.org/">Rust</a> that explores new ways to parallelize, decompose, and secure a rendering engine for web content. I prototyped the current layout subsystem (block/inline/text layout), and worked on many other things.
 </p>
 
 <h2><a href="#past" name="past">#</a> Other Projects</h2>
 
-<aside class="light">Internship at Microsoft Research in 2010.</aside>
+<aside>Internship at Mozilla Research in 2011.
+<ul class="supplemental-links">
+  <li><a href="files/jsprobes-slides.pdf">slides</li>
+  <li><a href="https://bitbucket.org/burg/jsprobes-patches/">patch series</a></li>
+  <li><a href="https://bitbucket.org/burg/aboutgc/">demo source</a></li>
+</ul>
+</aside>
+<p><a href="#"><tt>jsprobes</tt>:</a> an experiment in providing cross-platform browser instrumentation that's scriptable from JavaScript and distributable through the Firefox addon system.
+</p>
+
+<aside>Internship at Microsoft Research in 2010.
+<ul class="supplemental-links">
+  <li><a href="papers/webapps2011-c3-extensible-browser.pdf">paper</a></li>
+  <li><a href="https://homes.cs.washington.edu/~djg/theses/BenLerner_thesis.pdf">Lerner's Dissertation</a></li>
+</ul>
+</aside>
 <p><a href="#">C3:</a> a research infrastructure for extensible, type-safe web browsers. I wrote a rendering engine for inlines, blocks, floats, and tables in C#.
 </p>
 
-
 <h2><a href="#pubs" name="pubs">#</a>Academic Publications</h2>
 
-<p><b>Brian Burg</b>, Andrew J. Ko, Michael D. Ernst. Scry: Explaining Visual Changes in Web Interfaces. <i>In Review.</i></p>
+<aside>In Review.
+</aside>
+<p>Scry: Explaining Visual Changes in Web Interfaces.<br />
+<span class="author-list"><b>Brian Burg</b>, Andrew J. Ko, Michael D. Ernst</span></p>
 
-<p>Mouna Hammoudi, <b>Brian Burg</b>, Gigon Bae, and Gregg Rothermel. On the Use of Delta Debugging to Reduce Recordings and Facilitate Debugging of Web Applications. <i>In review.</i></p>
+<aside>In Review.</aside>
+<p>On the Use of Delta Debugging to Reduce Recordings and Facilitate Debugging of Web Applications.<br />
+<span class="author-list">Mouna Hammoudi, <b>Brian Burg</b>, Gigon Bae, and Gregg Rothermel.</span></p>
 
-<p><b>Brian Burg</b>, Katie Madonna, Andrew J. Ko, Michael D. Ernst. Interactive Navigation of Captured Executions via Program Output. <i>Work in progress.</i></p>
+<aside>Work in progress.
+</aside>
+<p>Interactive Navigation of Captured Executions via Program Output.<br />
+<span class="author-list"><b>Brian Burg</b>, Katie Madonna, Andrew J. Ko, Michael D. Ernst.</span></p>
 
-<p>Gregory L. Nelson, <b>Brian Burg</b>, Daniela Rosner. 'War Stories' of Debugging. <i>Unpublished draft.</i></p>
+<aside>Unpublished draft.</aside>
+<p>'War Stories' of Debugging.<br />
+<span class="author-list">Gregory L. Nelson, <b>Brian Burg</b>, Daniela Rosner.</span></p>
 
-<aside class="light">Honorable Mention, Best Paper Award.</aside>
-<p><b>Brian Burg</b>, Richard Bailey, Andrew J. Ko, Michael D. Ernst. Interactive record/replay for web application debugging. Presented at <a href="http://www.acm.org/uist/uist2013/">UIST 2013</a>.</p>
+<aside>
+Presented at <a href="http://www.acm.org/uist/uist2013/">UIST 2013</a><br />
+<i>Honorable Mention, Best Paper Award.</i><br />
+<ul class="supplemental-links">
+  <li><a href="papers/uist2013-interactive-record-replay.pdf">paper</a></li>
+  <li><a href="https://www.youtube.com/watch?v=ugHAzyQ6H00">demo video</a></li>
+  <li><a href="files/uist2013-timelapse-slides.pptx">slides</a></li>
+  <li><a href="https://github.com/burg/timelapse/">code</a></li>
+</ul>
+</aside>
+<p>Interactive record/replay for web application debugging.<br />
+<span class="author-list"><b>Brian Burg</b>, Richard Bailey, Andrew J. Ko, Michael D. Ernst.</span></p>
 
-<p>Gregor Richards, Christian Hammer, <b>Brian Burg</b>, Jan Vitek. The <tt>eval</tt> that men do: a large-scale study of the use of <tt>eval</tt> in JavaScript applications. Presented at <a href="http://scc-sentinel.lancs.ac.uk/ecoop11/">ECOOP 2011</a>.</p>
+<aside>Published at <a href="http://scc-sentinel.lancs.ac.uk/ecoop11/">ECOOP 2011</a>.
+<ul class="supplemental-links">
+  <li><a href="papers/ecoop2011-javascript-eval.pdf">paper</a></li>
+</ul>
+</aside>
+<p>The <tt>eval</tt> that men do: a large-scale study of the use of <tt>eval</tt> in JavaScript applications.<br />
+  <span class="author-list">Gregor Richards, Christian Hammer, <b>Brian Burg</b>, Jan Vitek</span>
 
-<p>Benjamin S. Lerner, <b>Brian Burg</b>, Herman Venter, Wolfram Schulte. C3: An experimental, extensible, reconfigurable platform for HTML-based applications. Presented at <a href="https://www.usenix.org/legacy/events/webapps11/index.html">WebApps 2011</a>.</p>
+<aside>Published at <a href="https://www.usenix.org/legacy/events/webapps11/index.html">WebApps 2011</a>.
+<ul class="supplemental-links">
+  <li><a href="papers/webapps2011-c3-extensible-browser.pdf">paper</a></li>
+  <li><a href="https://homes.cs.washington.edu/~djg/theses/BenLerner_thesis.pdf">Lerner's Dissertation</a></li>
+</ul>
+</aside>
+<p><acronym>C3</acronym>: An extensible, reconfigurable platform for HTML-based applications.<br/>
+  <span class="author-list">Benjamin S. Lerner, <b>Brian Burg</b>, Herman Venter, Wolfram Schulte.</a></p>
 
-<p>Gregor Richards, Sylvain Lebresne, <b>Brian Burg</b>, Jan Vitek. An analysis of the dynamic behavior of JavaScript programs. Presented at <a href="http://cs.stanford.edu/pldi10/">PLDI 2010</a>.</p>
+<aside>Published at <a href="http://cs.stanford.edu/pldi10/">PLDI 2010</a>.
+<ul class="supplemental-links">
+  <li><a href="papers/pldi2010-dynamics-of-javascript.pdf">paper</a></li>
+  <li><a href="https://www.cs.purdue.edu/sss/projects/dynjs/">code &amp; data</a></li>
+</ul>
+</aside>
+<p>An analysis of the dynamic behavior of JavaScript programs.<br />
+  <span class="author-list">Gregor Richards, Sylvain Lebresne, <b>Brian Burg</b>, Jan Vitek.</span></p>
 
 <!--
 <h2><a href="#writing" name="writing">#</a> Writing</h2>
