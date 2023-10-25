@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<style>
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+</style>
+</head>
+<body>
+  <div>
+    <video id="video" controls preload="none" poster="sintel_poster.png">
+      <source id="mp4" src="sintel_trailer.mp4" type="video/mp4">
+      <p>Your user agent does not support the HTML5 Video element.</p>
+    </video>
+  </div>
+</body>
+<script>
+var video = document.querySelector("video");
+
+window.addEventListener("orientationchange", (event) => {
+    console.log("got orientationchange, requesting fullscreen.");
+
+    enterFullscreen();
+});
+
+function enterFullscreen()
+{
+    if (document.webkitIsFullScreen)
+        return false;
+
+    video.requestFullscreen({ navigationUI: "hide" });
+//    video.webkitRequestFullscreen({ navigationUI: "hide" });
+    video.play();
+
+    return true;
+}
+
+function exitFullscreen()
+{
+    if (!document.webkitIsFullScreen)
+        return false;
+
+    document.webkitExitFullscreen();
+    video.pause();
+
+    return true;
+}
+</script>
+</html>
